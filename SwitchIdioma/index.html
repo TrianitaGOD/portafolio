@@ -10,6 +10,14 @@
 			crossorigin="anonymous"
 		></script>
 		<script type="text/javascript" src="../DarkMode/darkmode.js" defer></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+
+		<script type="text/javascript">
+			emailjs.init('ONSnQMKtZohpOE3yg');
+		</script>
 	</head>
 	<body>
 		<header>
@@ -91,10 +99,98 @@
 								><i class="fa-solid fa-envelope"></i
 							></a>
 						</div>
-						<a href="#cv" class="btn">Download CV</a>
+						<a
+							href="../Archivos/CV.pdf"
+							download="CV_SantiagoTriana"
+							class="btn"
+							>Download CV</a
+						>
 					</div>
 					<div class="hero-image">
 						<img src="../Imagenes/Perfil.jpg" alt="profile image" />
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="contactForm">
+					<div class="form">
+						<div class="texto">
+							<h2>Let's Talk!</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea
+							officiis est fuga ipsum, labore vitae? Sequi magnam quibusdam
+							dolorem veniam eligendi quo non minus ullam totam illo. Harum,
+							tempore!
+						</div>
+
+						<form id="form">
+							<div class="inputBox">
+								<label for="from_name">Your Name</label>
+								<input
+									type="text"
+									placeholder="Name..."
+									name="name"
+									id="from_name"
+								/>
+							</div>
+							<div class="inputBox">
+								<label for="email">Your Email</label>
+								<input
+									type="text"
+									placeholder="Email..."
+									name="email"
+									id="email"
+								/>
+							</div>
+							<div class="inputBox">
+								<label for="message">Your Message</label>
+								<textarea
+									name="message"
+									id="message"
+									cols="30"
+									rows="5"
+									type="text"
+									placeholder="Message..."
+								></textarea>
+							</div>
+							<input type="submit" id="button" value="Send Message" />
+						</form>
+					</div>
+
+					<div class="info">
+						<div class="imgBox">
+							<img src="../Imagenes/contacto.png" alt="" />
+						</div>
+						<div class="textBox">
+							<div class="infoContact">
+								<i class="fa-solid fa-map"></i>
+								<p>Serrezuelita, Funza (Colombia)</p>
+							</div>
+							<div class="infoContact">
+								<i class="fa-solid fa-phone"></i>
+								<p>+57 320 283 9065</p>
+							</div>
+							<div class="infoContact">
+								<i class="fa-solid fa-envelope"></i>
+								<p>trianasantiago290300@gmail.com</p>
+							</div>
+						</div>
+						<div class="rrss">
+							<a href="https://wa.me/573202839065" target="_blank"
+								><i class="fab fa-whatsapp"></i
+							></a>
+							<a href="https://github.com/TrianitaGOD" target="_blank"
+								><i class="fab fa-github"></i
+							></a>
+							<a
+								href="https://www.linkedin.com/in/santiago-triana-920798292/"
+								target="_blank"
+								><i class="fab fa-linkedin"></i
+							></a>
+							<a href="mailto:trianasantiago290300@gmail.com" target="_blank"
+								><i class="fa-solid fa-envelope"></i
+							></a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -219,5 +315,6 @@
 			</div>
 		</footer>
 		<script src="app.js"></script>
+		<script src="send_form.js"></script>
 	</body>
 </html>
